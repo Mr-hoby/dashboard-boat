@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>无人船可视化大屏</title>
+		<link rel="stylesheet" href="static/css/common.css">
+		<link rel="stylesheet" href="static/css/index.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="header flex-sp">
+				<div class="net">HIGHDE.COM</div>
+				<div class="time"></div>
+			</div>
+			<div class="digit-wrap flex-sp">
+				<div class="left">
+					<div class="title">选择船只</div>
+					<img src="images/border1.png" alt="">
+					<select class="select" name="boat" id="boat">
+						<option>18FSHD001</option>
+						<option>18FSHD002</option>
+						<option>18FSHD003</option>
+					</select>
+				</div>
+				<div class="con flex-sp">
+					<div>运行模式 <span>自动</span> </div>
+					<div>运行时长 <span>12h</span></div>
+					<div>运行速度 <span>268</span></div>
+					<div>清理量 <span>99</span></div>
+				</div>
+				<div class="right">
+					<div class="title">船只行踪信息</div>
+					<img class="border" src="images/border1.png" alt="">
+					<div class="msg-wrap flex-sp">
+						<div class="msg-item">
+							<img src="images/icon_lng.png" alt="">
+							<div class="num">9795.92 </div>
+							<div>经   度</div>
+						</div>
+						<div class="msg-item">
+							<img src="images/icon_lng.png" alt="">
+							<div class="num">2671.62  </div>
+							<div>维   度</div>
+						</div>
+						<div class="msg-item">
+							<img src="images/icon_radar.png" alt="">
+							<div class="num">89142</div>
+							<div>卫星数</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="view flex-sp">
+				<div class="section">
+					<!-- autoplay -->
+					<video src="https://media.w3.org/2010/05/sintel/trailer.mp4" controls  autoplay></video>
+				</div>
+				<div class="section flex-con">
+					<img src="images/map.png" alt="">
+				</div>
+				<div class="section">
+					<video src="https://media.w3.org/2010/05/sintel/trailer.mp4" controls ></video>
+				</div>
+			</div>
+			<div class="bottom flex-sp">
+				<div class="item item1">
+					<div class="title">水质指标</div>
+					<div class="list">
+						<div class="list-item flex">
+							<div>电导率 （MG/L）</div>
+							<div>0.8</div>
+						</div>
+						<div class="list-item flex">
+							<div>PH值</div>
+							<div>0.9</div>
+						</div>
+						<div class="list-item flex">
+							<div>饱和度 （MG/L）</div>
+							<div>1.0</div>
+						</div>
+						<div class="list-item flex">
+							<div>溶解氧 （MG/L）</div>
+							<div>100</div>
+						</div>
+						<div class="list-item flex">
+							<div>水温 （℃）</div>
+							<div>43</div>
+						</div>
+					</div>
+				</div>
+				<div class="item item2">
+					<div class="title">船只状态</div>
+					<div class="list list1">
+						<div class="list-item flex">
+							<div>运动状态</div>
+							<div>停止</div>
+						</div>
+						<div class="list-item flex">
+							<div>左电池温度</div>
+							<div>30℃</div>
+						</div>
+						<div class="list-item flex">
+							<div>左电池温度</div>
+							<div>30℃</div>
+						</div>
+						<div class="list-item flex">
+							<div>右电池温度</div>
+							<div>40℃</div>
+						</div>
+						<div class="list-item flex">
+							<div>右电池温度</div>
+							<div>40℃</div>
+						</div>
+						<div class="list-item flex">
+							<div>靠岸情况</div>
+							<div>未靠岸</div>
+						</div>
+						<div class="list-item flex">
+							<div>故障报警</div>
+							<div>无</div>
+						</div>
+					</div>
+				</div>
+				<div class="item item3">
+					<div class="title">
+						任务工单(当月)
+						<div class="total">共计 <span>263</span> </div>
+					</div>
+					<div class="echart-wrap flex">
+						<div id="pie"></div>
+						<div class="bar">
+							<div class="item">
+								<div>已完成（31/100）</div>
+								<div class="progress">
+									<div style="width: 31%;"></div>
+								</div>
+							</div>
+							<div class="item">
+								<div>在执行（50/100）</div>
+								<div class="progress progress1">
+									<div style="width: 50%;"></div>
+								</div>
+							</div>
+							<div class="item">
+								<div>待执行（71/100）</div>
+								<div class="progress progress2">
+									<div style="width: 71%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item item4">
+					<div class="title">操作台</div>
+					<div class="option-wrap flex">
+						<div>
+							<div class="number flex">100</div>
+							<div class="flex btn-wrap">
+								<img src="images/icon_up.png" alt="">
+								<img src="images/icon_down.png" alt="">
+							</div>
+						</div>
+						<div class="control">
+							<div>手动控制</div>
+							<div>自动控制</div>
+							<div>急停</div>
+							<div class="style1">20</div>
+							<div class="style2">差速</div>
+						</div>
+						<div>
+							<div class="number flex">100</div>
+							<div class="flex btn-wrap">
+								<img src="images/icon_up.png" alt="">
+								<img src="images/icon_down.png" alt="">
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+	<script type="text/javascript" src="static/js/echart_init.js"></script>
+	<script type="text/javascript" src="static/js/fitView.js"></script>
+	<script>
+		function showTime() {
+			var date = new Date();
+			var year = date.getFullYear();
+			var month = date.getMonth() + 1;
+			var day = date.getDate();
+			var week = date.getDay();
+			var hour = date.getHours();
+			var minute = date.getMinutes();
+			var second = date.getSeconds();
+			second = second < 10 ? "0" + second : second;
+			var current = year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second ;
+			$('.time').html(current)
+		}
+		setInterval("showTime()", 1000);
+	</script>
+</html>
